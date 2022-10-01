@@ -3,7 +3,6 @@ package me.jinadmit.design_patterns;
 import lombok.SneakyThrows;
 import me.jinadmit.design_patterns._01_creational_patterns._01_singleton.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
@@ -60,7 +59,7 @@ public class DesignPatternsApplication {
 
         SingletonEnum singletonEnumTest = null;
         try (ObjectInput in = new ObjectInputStream(new FileInputStream("singletonEnum.obj"))) {
-            singletonEnumTest = (SingletonEnum) in.readObject();=
+            singletonEnumTest = (SingletonEnum) in.readObject();
         }
         System.out.println("======================");
         System.out.println(singletonEnum == singletonEnumTest);
