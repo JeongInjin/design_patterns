@@ -1,4 +1,4 @@
-package me.jinadmit.design_patterns._01_creational_patterns._02_factory_method._01_before;
+package me.jinadmit.design_patterns._01_creational_patterns._02_factory_method._02_after;
 
 public class Ship {
 
