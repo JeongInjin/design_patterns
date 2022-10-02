@@ -6,4 +6,5 @@ public class WhiteShipFactory implements ShipFactory {
     public Ship createShip() {
         return new WhiteShip();
     }
+
 }
