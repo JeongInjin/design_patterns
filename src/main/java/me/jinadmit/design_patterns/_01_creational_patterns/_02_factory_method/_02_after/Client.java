@@ -3,11 +3,14 @@ package me.jinadmit.design_patterns._01_creational_patterns._02_factory_method._
 public class Client {
 
     public static void main(String[] args) {
-        Ship whiteShip = new WhiteShipFactory().orderShip("whiteShip", "injin@emaul.com");
-        System.out.println(whiteShip);
+        Client client = new Client();
+        client.print(new WhiteShipFactory(), "whiteShip", "injin@email.com");
+        client.print(new BlackShipFactory(), "blackShip", "injin@email.com");
+    }
 
-        Ship blackShip = new BlackShipFactory().orderShip("blackShip", "injin@emaul.com");
-        System.out.println(blackShip);
+    private void print(ShipFactory shipFactory, String name, String email) {
+        System.out.println(shipFactory.orderShip(name, email));
+        System.out.println("=============================================================================");
     }
 
 }
