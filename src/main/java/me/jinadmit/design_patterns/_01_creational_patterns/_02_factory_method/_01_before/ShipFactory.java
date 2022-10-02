@@ -1,4 +1,4 @@
-package me.jinadmit.design_patterns._01_creational_patterns._02_factory_after._01_before;
+package me.jinadmit.design_patterns._01_creational_patterns._02_factory_method._01_before;
 
 public class ShipFactory {
 
@@ -25,7 +25,7 @@ public class ShipFactory {
 
         // coloring
         if (name.equalsIgnoreCase("whiteship")) {
-            ship.setColor("white");
+            ship.setColor("whiteship");
         } else if (name.equalsIgnoreCase("blackship")) {
             ship.setColor("black");
         }
